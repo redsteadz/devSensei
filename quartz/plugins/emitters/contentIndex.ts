@@ -54,6 +54,7 @@ function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndex, limit?: nu
     <title>${escapeHTML(content.title)}</title>
     <link>${root}/${encodeURI(slug)}</link>
     <guid>${root}/${encodeURI(slug)}</guid>
+    <tags>${content.tags}</tags>
     <description>${content.richContent ?? content.description}</description>
     <pubDate>${content.date?.toUTCString()}</pubDate>
   </item>`

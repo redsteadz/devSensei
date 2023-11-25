@@ -1,10 +1,10 @@
 ---
-title: "useEffect"
-date: tp.date.now("YYYY-MM-DD")
+title: useEffect
+date: 2023-08-12
 tags:
-- react
-- hooks
-- fundamental
+  - react
+  - hooks
+  - fundamental
 ---
 [001. Resources](notes/5.Resources/001.%20Resources.md)
 - [w3schools](https://www.w3schools.com/react/react_useeffect.asp)
