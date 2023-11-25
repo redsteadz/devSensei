@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "redsteadz.github.io/devSensei",
-    ignorePatterns: ["private", "templates", ".obsidian", "*excalidraw*"],
+    ignorePatterns: ["private", "templates", ".obsidian","Excalidraw", '**/*.excalidraw', '**/*.*.excalidraw.md'],
     defaultDateType: "created",
     theme: {
       typography: {
