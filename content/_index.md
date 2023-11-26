@@ -7,7 +7,7 @@ enableToc: false
 
 <h1 align="center"> Navigation </h1>
 
-## [[notes/3.ReactJS/001.  ReactJS|001.  ReactJS]]
+## [[notes/3.ReactJS/001.  ReactJS|001.  ReactJS]]
 
 - **Articles**
 	- [[notes/3.ReactJS/Basic Gist of React|Basic Gist of React]]
@@ -23,7 +23,7 @@ enableToc: false
 - [[notes/3.ReactJS/Fundamentals/Responsive_Design|Responsive_Design]]
 - [[notes/3.ReactJS/Fundamentals/useEffect|useEffect]]
 
-## [[notes/2.CodeQ/001.   CodeWars|001.   CodeWars]]
+## [[notes/2.CodeQ/001.   CodeWars|001.  CodeWars]]
 - **4kyu**
 	- [[notes/2.CodeQ/4 kyu/Snail|Snail]]
 - **5kyu** 
@@ -66,19 +66,9 @@ enableToc: false
 
 <h1 align="center"> Tasks </h2>
 
-```dataview
-task from #task 
-WHERE !completed
-```
-
 ---
 
 <h1 align="center">Journal</h1>
-
-```dataview
-table date
-from #daily 
-```
 
 # 侍 Musashi's 21 rules _Modified_
 - Accept everything just the way it is.

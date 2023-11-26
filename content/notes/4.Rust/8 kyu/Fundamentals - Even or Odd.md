@@ -1,10 +1,11 @@
 ---
-title: "Fundamentals - Even or Odd"
+title: Fundamentals - Even or Odd
 tags:
-- rust
-- codewars
-- programming
-- basics
+  - rust
+  - codewars
+  - programming
+  - basics
+date: 2023-11-13
 ---
 ## Description
 Create a function that takes an integer as an argument and returns `"Even"` for even numbers or `"Odd"` for odd numbers.

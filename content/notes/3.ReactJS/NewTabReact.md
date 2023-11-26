@@ -1,10 +1,11 @@
 ---
-title: "NewTabReact"
+title: NewTabReact
 tags:
-- react
-- projects
-- how-to
-- step-by-step
+  - react
+  - projects
+  - how-to
+  - step-by-step
+date: 2023-10-20
 ---
 
 I've seen some really cool NewTab front pages for featured on github for [r/unixporn](https://www.reddit.com/r/unixporn/)

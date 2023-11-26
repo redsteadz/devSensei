@@ -1,10 +1,11 @@
 ---
-title: "React-icons"
+title: React-icons
 tags:
-- fundamentals
-- react
-- react_pkg
-- docs
+  - fundamentals
+  - react
+  - react_pkg
+  - docs
+date: 2023-09-21
 ---
 
 Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.

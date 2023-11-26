@@ -1,9 +1,10 @@
 ---
-title: "SimpleTicTacToe"
+title: SimpleTicTacToe
 tags:
-- react
-- quickstart
-- game
+  - react
+  - quickstart
+  - game
+date: 2023-11-04
 ---
 
 As a person who just becomes outright bored at watching tutorial videos, I thought It'd be best to make a simple TicTacToe game and change the styles and design as we go along from the documentation provided at [React docs](https://react.dev/learn/tutorial-tic-tac-toe). 
