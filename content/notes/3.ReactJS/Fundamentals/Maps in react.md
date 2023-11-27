@@ -1,9 +1,10 @@
 ---
-title: "Maps in react"
-description: "How the array.maps is used in react"
+title: Maps in react
+description: How the array.maps is used in react
 tags:
-- react
-- fundamentals
+  - react
+  - fundamentals
+date: 2014-11-14
 ---
 
 ```js

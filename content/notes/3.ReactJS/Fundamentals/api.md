@@ -1,9 +1,10 @@
 ---
-title: "API-React"
+title: API-React
 tags:
-- react
-- api
-- fundamentals
+  - react
+  - api
+  - fundamentals
+date: 2021-08-02
 ---
 
 API can be fetched through javascript by the following code
