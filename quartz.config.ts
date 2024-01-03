@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "redsteadz.github.io/devSensei",
-    ignorePatterns: ["private", "templates", ".obsidian","Excalidraw", '**/*.excalidraw', '**/*.*.excalidraw.md'],
+    ignorePatterns: ["private", "templates", ".obsidian","Excalidraw", '**/*.excalidraw', '**/*.*.excalidraw.md' ],
     defaultDateType: "created",
     theme: {
       typography: {
@@ -47,7 +47,7 @@ const config: QuartzConfig = {
       Plugin.FrontMatter(),
       Plugin.TableOfContents(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "filesystem"], // you can add 'git' here for last modified from Git but this makes the build slower
+        priority: ["frontmatter", "git", "filesystem" ], // you can add 'git' here for last modified from Git but this makes the build slower
       }),
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.SyntaxHighlighting(),
