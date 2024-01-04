@@ -1,28 +1,31 @@
 #include <iostream>
-#include <math.h>
-#include <string>
-using namespace std;
 
-
-int main(int argc, char *argv[]) { 
-  string digits[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-  string tenths[10] = {"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
-  string powers[11] = {"hundred", "thousand", "million", "billion", "trillion", "quadrillion", "quintillion", "sextillion", "septillion", "octillion"};
-  
-  string number;
-  cin >> number; 
-  int length = number.length();
-  for (int i = 0; i < number.length(); i++) {
-    if (number[i] != 0){
-      if (length - i > 2){
-        cout << digits[number[i] - '0' - 1] << " " << powers[length - i - 3] << " ";
-      } else if (length - i == 2){
-        cout << tenths[number[i] - '0'] << " ";
-      } else {
-        cout << digits[number[i] - '0' - 1] << " ";
-      }
+int* divisors (int num, size_t *sz) {
+  int s = 0;
+  for (int i = 1; i <= num; i++){
+    if (num % i == 0) {
+      s++;
     }
   }
+  
+  int *arr = new int[s+1];
+  
+  int cnt = 0;
+  for (int i = 1; i <= num; i++){
+    if (num % i == 0) {
+      arr[cnt++] = i;
+    }
+  }
+  *sz = s;
+  
+  return arr;
+}
 
+int main (int argc, char *argv[]) {
+size_t s;
+int *a = divisors(10, &s);
+  for (int i = 0; i < s; i++){
+    std::cout << *(a + i) << std::endl;
+  }
   return 0;
 }

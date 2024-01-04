@@ -4,7 +4,7 @@ aliases:
   - Lab 1
 tags: []
 date: "2024-01-03"
-title: 2021-Lab1-Spring-OOPLab
+title: Day 1 of OOP
 ---
 
 # Lab 1
