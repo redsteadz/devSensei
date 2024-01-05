@@ -1,31 +1,56 @@
 #include <iostream>
+#include <cmath>
+using namespace std;
 
-int* divisors (int num, size_t *sz) {
-  int s = 0;
-  for (int i = 1; i <= num; i++){
-    if (num % i == 0) {
-      s++;
-    }
+class Cart{
+  public:
+  int quantity;
+  float priceOfBag = 5.5;
+  void setQuantity(int q){
+    quantity = q;
   }
-  
-  int *arr = new int[s+1];
-  
-  int cnt = 0;
-  for (int i = 1; i <= num; i++){
-    if (num % i == 0) {
-      arr[cnt++] = i;
+};
+
+class Bill{
+  private:
+    int lBoxCap = 20;
+    float lBoxCost = 1.8;
+    int mBoxCap = 10;
+    float mBoxCost = 1.0;
+    int sBoxCap = 5;
+    float sBoxCost = 0.6;
+    float totalCost = 0;
+  public:
+    void calculateBill(Cart c){
+      int quantity = c.quantity;
+      if (quantity >= lBoxCap){
+       std::cout << quantity/lBoxCap << "Large Boxes: " << (int)(quantity/lBoxCap)*lBoxCost << std::endl;
+       totalCost += (int)(quantity/lBoxCap)*lBoxCost;
+       quantity = quantity % lBoxCap;
+      }
+      if (quantity >= mBoxCap){
+       std::cout << quantity/mBoxCap << "Medium Boxes: " << (int)(quantity/mBoxCap)*mBoxCost << std::endl;
+       totalCost += (int)(quantity/mBoxCap)*mBoxCost;
+       quantity = quantity % mBoxCap;
+       // cout << quantity << endl;
+      }
+      if (quantity >= 0){
+        int sBox = ceil((float) quantity/sBoxCap);
+       std::cout << sBox << "Small Boxes: " << sBox*sBoxCost << std::endl;
+       totalCost += sBox*sBoxCost;
+      }
+
+      cout << "Total Cost: " << totalCost + c.quantity*c.priceOfBag << endl;
+
     }
-  }
-  *sz = s;
-  
-  return arr;
-}
+};
 
 int main (int argc, char *argv[]) {
-size_t s;
-int *a = divisors(10, &s);
-  for (int i = 0; i < s; i++){
-    std::cout << *(a + i) << std::endl;
-  }
+  Bill b;
+  Cart c;
+    c.quantity = 52;
+  std::cout << "The Cost of Order: " << c.quantity * c.priceOfBag << std::endl;
+  b.calculateBill(c);
+
   return 0;
 }
